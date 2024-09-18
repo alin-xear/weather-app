@@ -77,6 +77,7 @@ function App() {
 
   useEffect(() => {
     fetchWeather(location);
+    localStorage.setItem("location", location);
   }, [location]);
 
   const handleClick = () => {
