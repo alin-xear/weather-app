@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+  color: #545c52;
+  background-color: #bfedef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+#root {
+  width: 92%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 112rem;
+  width: 100%;
+  gap: 4rem;
+  padding: 6rem 0;
+  /* border: 12px solid #222; */
+  /* outline: 2px solid #222; */
+  outline-offset: 1.2rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  background-color: #98e2c6;
+  /* color: white; */
+  padding: 1.6rem 3.2rem;
+  border: none;
+  width: 32rem;
+}
+
+input:focus {
+  outline: 2px solid #545c52;
+}
+
+.weather {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 2rem;
+}
+
+.day {
+  background-color: #98e2c6;
+  /* color: white; */
+  padding: 1.6rem 0 2rem;
+  width: 12.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.day span {
+  font-size: 5.2rem;
+}
+
+.day.important {
+  background-color: #c7d9ee;
+  outline: 2px solid #545c52;
+}
+
+.loader {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 40.625em) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+  }
+
+  .day span {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 26.875em) {
+  h1 {
+    font-size: 7.5vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  input {
+    padding: 1rem 2rem;
+    width: 50vw;
+  }
+
+  .day span {
+    font-size: 3.2rem;
+  }
+}
